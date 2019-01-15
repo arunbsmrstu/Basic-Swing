@@ -112,6 +112,9 @@ public class Login extends javax.swing.JFrame {
                     Notification.successfullyMessage("Successful");
                     userName.setText("");
                     password.setText("");
+                    Information i= new Information();
+                    i.show();
+                    this.dispose();
                 } else {
                     Notification.errorMessage("Failed");
                 }
